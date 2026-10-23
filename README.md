@@ -1,51 +1,35 @@
-# Natural ou Fake Natty? Como Vencer na Era das IAs Generativas
+# Projeto: Gerador Ágil de Legendas de Produtos com n8n & IA
 
-## 🚀 Introdução
+## Descrição do Projeto
+Este projeto foi desenvolvido como parte do Desafio de Projeto "Natty or Not" da Digital Innovation One (DIO). O objetivo principal é construir uma automação simples e didática utilizando a plataforma n8n conectada a um Modelo de Linguagem (IA Generativa), permitindo a geração rápida e estruturada de legendas para divulgação de produtos em redes sociais e canais de atendimento.
 
-> Woooow! Look at this 👀
+O projeto beneficia pequenos empreendedores e criadores de conteúdo que buscam agilidade na comunicação sem perder a clareza e o tom humanizado.
 
-Olá pessoal, Venilton da DIO aqui! Inspirado na hype _"Natty or Not"_ do fisiculturismo, este Lab da DIO te convida a conhecer o mundo das IAs Generativas, explorando o potencial dessas tendências tecnológicas incríveis!
+## Tecnologias e Ferramentas Utilizadas
+- **n8n:** Orquestração do fluxo de automação e integração de nós.
+- **OpenAI / Gemini:** Processamento e geração do conteúdo textual via IA Generativa.
+- **GitHub:** Documentação, versionamento e publicação do repositório.
 
-## 🎯 Bora Pro Desafio!? Você Já Venceu 💪🤓
+## Arquitetura do Fluxo no n8n
+O fluxo foi estruturado em um pipeline simples de 3 etapas principais:
 
-### Objetivos
+1. **Entrada (Trigger):** Utilização do nó *Manual Trigger* (ou Formulário simples) para receber a descrição do produto e as especificações básicas.
+2. **Processamento (Nó de IA):** Chamada ao modelo de IA Generativa via prompt instrucional focado em síntese e engajamento.
+3. **Saída (Visualização):** Exibição do resultado gerado diretamente na interface do n8n para validação do usuário.
 
-1. **Explorar IAs Generativas**: Utilize essas tecnologias para criar conteúdos que sejam o mais realista possível. Seja criativo! Você pode produzir imagens, textos, áudios, vídeos ou combinações de tudo isso!
-1. **Potfólio de Projetos**:
-    1. Faça o "fork" deste repositório, criando uma cópia em seu GitHub pessoal;
-    2. Edite seu README com os detalhes do seu projeto, siga nosso [Template](#template) (é só copiar, colar e preencher);
-    3. Submeta o link do seu repositório na plataforma da DIO. Pronto, você acabou de fortalecer seu portfólio de projetos nos perfis do GitHub e DIO 🚀
-1. **Efeito de Rede**: Compartilhe seus resultados nas redes sociais com a hashtag **#LabDIONattyOrNot**. Não esqueça de nos marcar: [DIO](https://www.linkedin.com/school/dio-makethechange) e [falvojr](https://www.linkedin.com/in/falvojr).
+## Prompts e Exemplos de Entrada/Saída
 
-### Template
+- **Prompt Utilizado:**
+  > `"Aja como um assistente especialista em comunicação e marketing. Crie uma legenda curta, clara e engajadora com emojis para divulgação do seguinte produto: [Entrada do Usuário]. Mantenha um tom profissional e acolhedor."`
 
-```markdown
-# Título do Projeto Extremamente Aesthetic ;)
+- **Exemplo de Entrada:**
+  > *"Bandana pet confeccionada em tecido de algodão, tamanho P, estampa xadrez verde."*
 
-## 📒 Descrição
-Breve descrição do seu projeto
+- **Exemplo de Saída Gerada:**
+  > *"Seu pet com o estilo que ele merece! 🐾 Conheça nossa nova bandana xadrez verde em algodão, leve e confortável para o dia a dia. Garanta já o tamanho P para o seu companheiro!"*
 
-## 🤖 Tecnologias Utilizadas
-Liste as IAs Generativas e outras ferramentas usadas
-
-## 🧐 Processo de Criação
-Descreva como você criou o conteúdo
-
-## 🚀 Resultados
-Apresente os resultados do seu projeto
-
-## 💭 Reflexão (Opcional)
-Comente sobre o desafio de criar algo 'natty' com IA.
-```
-
-### Exemplos e Insigths
-
-- [E-BOOK](/exemplos/E-BOOK.md)
-- [Podcast](/exemplos/PODCAST.md)
-- [Vídeo (Avatar Virtual)](/exemplos/VIDEO.md)
-
-## Links Interessantes
-
-[Base10: If You’re Not First, You’re Last: How AI Becomes Mission Critical](https://base10.vc/post/generative-ai-mission-critical/)
-
-![Base10's Trend Map Generative AI](https://github.com/digitalinnovationone/lab-natty-or-not/assets/730492/f4df26e8-f8f7-4419-8252-c69d73ea930c)
+## Reflexão ("Natty or Not")
+- **Natty (Natural) ou Fake Natty (Artificial)?** 
+  O resultado gerado mostrou-se **Natty (Natural)**. O modelo conseguiu balancear os emojis e a mensagem sem exageros ou clichês robóticos, mantendo a utilidade prática para o dia a dia.
+- **Experiência com n8n:**
+  Orquestrar a IA através do n8n demonstra o potencial da automação visual: em vez de digitar prompts manualmente a todo momento, o fluxo padroniza a entrada e a saída, economizando tempo e mantendo a consistência do conteúdo.
